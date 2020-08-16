@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import "sass/_variables.scss";
+@import "sass/_404.scss";
+@import "sass/autumn.scss";
+@import "sass/_base.scss";
+@import "sass/_blog.scss";
+@import "sass/_footer.scss";
+@import "sass/_landing.scss";
+@import "sass/_navbar.scss";
+@import "sass/_projects.scss";
+@import "sass/_skills.scss";
+@import "sass/_timeline.scss";
+@import "~bootstrap/dist/css/bootstrap.css";

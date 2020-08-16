@@ -1,0 +1,49 @@
+<div class="d-flex flex-column h-100">
+  <div class="flex-shrink-0 container mt-5">
+    <!-- NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" (click)="openPage('home')"><h5><b>Sanjeet Gupta</b></h5></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link " (click)="openPage('projects')" >Projects</a>
+              <a class="nav-item nav-link " (click)="openPage('cv')" >About</a>
+        </div>
+      </div>
+    </nav>
+    <!--INTRO-->
+    <div class="row justify-content-center align-items-center p-4" *ngIf="page==='home'">
+      <div class="col-lg-4 col-md-6 text-center mt-4">
+        <div id="container" class="my-2">
+            <img src="/assets/images/profileImg.png" alt="Sanjeet's Personal Site" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
+        </div>
+        <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{intro}}</p>
+      </div>
+    </div>
+    <!--PROJECTS-->
+    <div class="card-columns m-3 mt-5" *ngIf="page=='projects'">
+      <!--aidoc-->
+      <div class="wow animated fadeIn" data-wow-delay=".15s">
+        <a routerLink="/aidoc"  (click)="openPage('project-page')" class="project card text-dark">
+          <img class="card-img-top" src="assets/images/aiDoc.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">AI Doc</h5>
+            <p class="card-text">A text to text transformer model trained on questions from patients and answers from a doctor. Deployed on GCP through Kubernetes and Docker.</p>
+             <p class="card-text">Try out the Demo here!!!</p>
+            <p class="card-text">
+                <span class="badge badge-pill text-primary border border-primary">Tensorflow</span>
+                <span class="badge badge-pill text-primary border border-primary">Transformer</span>
+                <span class="badge badge-pill text-primary border border-primary">Kubernetes</span>
+                <span class="badge badge-pill text-primary border border-primary">GCP</span>
+                <span class="badge badge-pill text-primary border border-primary">Python</span>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <router-outlet *ngIf="page=='project-page'"></router-outlet>
+  </div>
+  </div>
+
