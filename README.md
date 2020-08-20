@@ -16,7 +16,9 @@ ng build --prod --build-optimizer --baseHref="/static/"
 
 ## Deploy to google app engine
 cd website_with_proxy
+
 gcloud init
+
 gcloud app deploy
 
 
