@@ -15,11 +15,10 @@ since we are going to use flask server to deploy let's set the baseHref to /stat
 transfer all the files from dist/my-website/ (except  index.html)  to website_with_proxy/static
 
 ### Deploy to google app engine
+```
 cd website_with_proxy
-
 gcloud init
-
 gcloud app deploy
-
+```
 
 
