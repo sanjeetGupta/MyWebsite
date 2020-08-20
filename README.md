@@ -10,7 +10,7 @@ Since, the backend apis dont have ssl or cors enabled all requests from the fron
 ### Build 
 ### since we are going to use flask server to deploy let's set the baseHref to /static/ 
 
-ng build --prod --build-optimizer --baseHref="/static/"
+```ng build --prod --build-optimizer --baseHref="/static/" ```
   
 ### transfer all the files from dist/my-website/ (except  index.html)  to website_with_proxy/static
 
