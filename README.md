@@ -13,6 +13,7 @@ since we are going to use flask server to deploy let's set the baseHref to /stat
 ```ng build --prod --build-optimizer --baseHref="/static/" ```
   
 transfer all the files from dist/my-website/ (except  index.html)  to website_with_proxy/static
+transfer index.html to website_with_proxy/templates
 
 ### Deploy to google app engine
 
