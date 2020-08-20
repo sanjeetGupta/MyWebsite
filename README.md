@@ -16,7 +16,7 @@ transfer all the files from dist/my-website/ (except  index.html)  to website_wi
 
 ### Deploy to google app engine
 
-Before this step, it is required to setup a billing account on Google Cloud Platform and create a password. 
+Before this step, it is required to setup a billing account on Google Cloud Platform and create a project. 
 Also, it is required to download the gcloud sdk from here: https://cloud.google.com/sdk/docs/quickstarts
 ```
 cd website_with_proxy
