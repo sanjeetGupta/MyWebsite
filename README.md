@@ -8,7 +8,7 @@ Since, the backend apis don't have ssl or cors enabled all requests from the fro
 ## Steps to deploy
 
 ### Build the angular app
-since we are going to use flask server to deploy let's set the baseHref to /static/ 
+Since, we are going to use flask server to deploy let's set the baseHref to /static/ 
 
 ```ng build --prod --build-optimizer --baseHref="/static/" ```
   
