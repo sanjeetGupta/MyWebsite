@@ -1,0 +1,11 @@
+.about {
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-bottom: 120px;
+  padding-bottom: 120px;
+}
+.multi_col {
+    display: block;
+    width: 25%;
+    float: left;
+}

@@ -1,0 +1,30 @@
+.intro__hello{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-weight: 20%;
+	max-width: 700px;
+}
+
+.name {
+	font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.intro__tagline{
+  font-size: 1.5rem;
+  padding-bottom: 60px;
+  font-weight: 300;
+	max-width: 700px;
+}
+
+.intro__contact{
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+.intro {
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-bottom: 120px;
+  padding-bottom: 120px;
+}

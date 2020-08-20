@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class AidocComponent {
   question = '';
   answer = '';
-  URL = 'http://localhost:9236/doc_app';
+  URL = ;
   constructor(private http: HttpClient) {}
 
   // tslint:disable-next-line:typedef

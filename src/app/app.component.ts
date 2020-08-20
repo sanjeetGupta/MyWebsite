@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-website';
-  intro = 'I am a Natural Language Processing Engineer with a passion for Automation.';
   page = 'home';
 
   // tslint:disable-next-line:typedef
