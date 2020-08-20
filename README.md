@@ -15,6 +15,9 @@ since we are going to use flask server to deploy let's set the baseHref to /stat
 transfer all the files from dist/my-website/ (except  index.html)  to website_with_proxy/static
 
 ### Deploy to google app engine
+
+Before this step, it is required to setup a billing account on Google Cloud Platform and create a password. 
+Also, it is required to download the gcloud sdk from here: https://cloud.google.com/sdk/docs/quickstarts
 ```
 cd website_with_proxy
 gcloud init
