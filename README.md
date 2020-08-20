@@ -21,4 +21,9 @@ gcloud init
 gcloud app deploy
 ```
 
+## Files Description
+
+```website_with_proxy/main.py```  is the flask app.
+```website_with_proxy/app.yaml``` is the deployment file for app engine.
+
 
