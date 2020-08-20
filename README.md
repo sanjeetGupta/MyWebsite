@@ -3,7 +3,7 @@
 ## Angular + Flask 
 
 This is a Website, I use to host project demos and my CV.
-Since, the backend apis dont have ssl or cors enabled all requests from the front-end are made to the flask server itself. Also, the website is hosted through the same flask server.
+Since, the backend apis don't have ssl or cors enabled all requests from the front-end are made to the flask server itself. Also, the website is hosted through the same flask server.
 
 ## Steps to deploy
 
