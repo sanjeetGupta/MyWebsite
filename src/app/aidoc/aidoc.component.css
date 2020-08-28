@@ -124,3 +124,16 @@
   color: white;
 	background-color: #1976d2;
 }
+
+.container{
+  width: 100%;
+  text-align: center;
+}
+
+.output_highlight{
+  font-weight: bold;
+}
+
+.highlight_advice{
+  font-style: italic;
+}

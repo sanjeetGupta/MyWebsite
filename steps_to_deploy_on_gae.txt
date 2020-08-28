@@ -1,5 +1,5 @@
 ### Build the website ###
-# since we are going to use flask server to deploy let's set the baseHref to /static/ 
+# since we are going to use flask server to deploy let's set the baseHref to /static/
 ng build --prod --build-optimizer --baseHref="/static/"
 
 ## transfer all the files, except for index.html from dist to static folder inside website_with_proxy/static
@@ -10,3 +10,8 @@ ng build --prod --build-optimizer --baseHref="/static/"
 cd website_with_proxy
 gcloud init
 gcloud app deploy
+
+## list the versions
+gcloud app versions list
+# delete everything other than the latest versions
+gcloud app versions delete <version-id-to-delete>
