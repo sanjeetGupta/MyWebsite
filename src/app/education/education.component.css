@@ -39,9 +39,14 @@
   padding-bottom: 20px;
   border-bottom: 1px dashed  #6c757d;
 }
+.company{
+  margin-top: -5px;
+  margin-bottom: 15px;
+  font-size: larger;
+}
 
 .date {
-  margin-top: -5px;
+  margin-top: 3px;
   margin-bottom: 15px;
   color: #6c757d;
 }
