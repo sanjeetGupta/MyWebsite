@@ -1,3 +1,6 @@
-website_with_proxy/url_details.py
 node_modules/*
 .idea/*
+__pycache__
+website_with_proxy/__pycache__/
+website_with_proxy/url_details.py
+website_with_proxy/.idea/
