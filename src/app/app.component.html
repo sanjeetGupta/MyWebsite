@@ -2,28 +2,28 @@
   <div class="flex-shrink-0 container mt-5">
     <!-- NAVIGATION BAR-->
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="nav-link navbar-brand" (click)="openPage('home')"><img src="assets/favicon.ico" width="50" height="50" ></a>
+      <a class="nav-link navbar-brand" routerLink="/"><img src="assets/favicon.ico" width="50" height="50" ></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-              <a  class= "nav-link nav-item" routerLink="/intro" (click)="openPage('About Me')"><b>1. </b>About Me</a>
-              <a class="nav-link nav-item" routerLink="/projects" (click)="openPage('Projects')"><b>2. </b>Projects</a>
-              <a class="nav-link nav-item" routerLink="/workexp" (click)="openPage('Work Experience')"><b>3. </b>Work Experience</a>
-              <a class="nav-link nav-item" routerLink="/education" (click)="openPage('Education')"><b>4. </b>Education</a>
-              <a class="nav-link nav-item" routerLink="/referrals" (click)="openPage('Referrals')"><b>5. </b>Referrals</a>
+              <a  class= "nav-link nav-item" routerLink="/intro" ><b>1. </b>About Me</a>
+              <a class="nav-link nav-item" routerLink="/projects" ><b>2. </b>Projects</a>
+              <a class="nav-link nav-item" routerLink="/workexp" ><b>3. </b>Work Experience</a>
+              <a class="nav-link nav-item" routerLink="/education" ><b>4. </b>Education</a>
+              <a class="nav-link nav-item" routerLink="/referrals" ><b>5. </b>Referrals</a>
         </div>
       </div>
     </nav>
-    <header class ='intro' *ngIf="page=='home'">
+    <header class ='intro' *ngIf="this.routr.url=='/'">
       <h6 class ='intro__hello'>Hi, my name is</h6>
       <h1 class='name'>Sanjeet Gupta</h1>
       <h2 class="intro__tagline">I'm a Machine Learning Engineer specializing in Natural Language Processing &amp; Automation. <span class="emoji technologist"></span> </h2>
       <h3 class="intro__contact"> <span>Get in touch 👉  </span>  <span> <a href="mailto:sanjeetgupta1996@gmail.com" target="_blank" class="highlight-link">sanjeetgupta1996@gmail.com</a> </span> </h3>
     </header>
 
-    <router-outlet *ngIf="page!='home'"></router-outlet>
+    <router-outlet *ngIf="this.routr.url!='/'"></router-outlet>
   </div>
 </div>
 

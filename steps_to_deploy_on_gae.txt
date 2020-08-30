@@ -1,6 +1,6 @@
 ### Build the website ###
 # since we are going to use flask server to deploy let's set the baseHref to /static/
-ng build --prod --build-optimizer --baseHref="/static/"
+ng build --prod --build-optimizer
 
 ## transfer all the files, except for index.html from dist to static folder inside website_with_proxy/static
 
